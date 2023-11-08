@@ -1,58 +1,14 @@
-<!DOCTYPE html>
-<html manifest="hangtimer.manifest">
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" href="iphone_hangtimer_icon.png" />
-	<link rel="icon" type="image/x-icon" href="iphone_hangtimer_icon.png" sizes="120x120">
-	<link rel="apple-touch-startup-image" href="startup.png" />
-	<link rel="stylesheet" href="hangtimer.css" type="text/css" media="screen, mobile" title="main" charset="utf-8">
-	<title>Hangtimer</title>
-</head>
-
-<body onload="reset();"> <!-- Put your Markup Here -->
-	<script type="text/javascript" src="hangtimer.js"></script>
-	<div class="grid-container">
-
-		<button class="up-btn HangtimeUp" onclick="increaseValue('duration')">&#9650;</button>
-		<div class="Hangtime">
-			<div class="HangtimeText"> Dauer </div>
-			<div class="HangtimeValue" id="duration">Loading...</div>
-		</div>
-		<button class="down-btn HangtimeDown" onclick="decreaseValue('duration')">&#9660;</button>
-
-		<button class="up-btn SetsUp" onclick="increaseValue('sets')">&#9650;</button>
-		<div class="Sets">
-			<div class="SetsText"> Sätze </div>
-			<div class="SetsValue" id="sets">Loading...</div>
-		</div>
-
-		<button class="down-btn SetsDown" onclick="decreaseValue('sets')">&#9660;</button>
-		<button class="up-btn BreakUp" onclick="increaseValue('break')">&#9650;</button>
-		<div class="Break">
-			<div class="BreakText"> Pause </div>
-			<div class="BreakValue" id="break">Loading...</div>
-		</div>
-		<button class="down-btn BreakDown" onclick="decreaseValue('break')">&#9660;</button>
-
-		<div class = "TimerRow">
-			<button class="Start" id="start-btn" onclick="startTimer()">Start</button>
-
-			<p class="TimerValue"><span id="timerValue">0</span></p>
-
-			<p class="TimerText"><span id="timerText">Done</span></p>
-		</div>
-
-		<div class="Audio">
-			<input class="Audio" type="checkbox" id="audio" onclick="setAudio()" />
-			<label class="Audio" for="audio" id="audioLabel">Play Audio</label>
-		</div>
-
-	</div>
-
-</body>
-
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <ol class="toc-list" role="list">
+            <li>
+                <a href="hangtimer/index.html">Hangtimer</a>
+            </li>
+        </ol>
+    </body>
 </html>
+
+<!-- role=list necessary because WebKit removes list semantic when list-style-type: none -->
