@@ -92,7 +92,7 @@ function setTimerText(timeLeft, kind) {
     switch (kind) {
         case 'Done':
             document.body.style.backgroundColor = "transparent";
-            document.body.style.backgroundImage = 'url("background.png")';
+            document.body.style.backgroundImage = 'url("pictures/background.png")';
             break;
         case 'Halten':
             document.body.style.backgroundColor = "DarkGreen";
@@ -151,8 +151,8 @@ function decreaseValue(field) {
     }
 }
 async function startTimer() {
-    let audio_youdidit = new Audio('youdidit.mp3');
-    let audio_duck = new Audio('duckquack.mp3');
+    let audio_youdidit = new Audio('audio/youdidit.mp3');
+    let audio_duck = new Audio('audio/duckquack.mp3');
     let startBtn = document.getElementById('start-btn');
     if (startBtn.innerHTML == 'Start') {
         startBtn.innerHTML = 'Abbrechen';
