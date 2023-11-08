@@ -1,0 +1,234 @@
+.up-btn {
+	font-size: 1.5em;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, .50);
+	border : none;
+	border-radius: 0;
+	color: black;
+}
+
+.down-btn {
+	font-size: 1.5em;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, .50);
+	border-color: gray;
+	border : none;
+	border-radius: 0;
+	color: black;
+}
+
+
+#start-btn {
+
+	font-size: 2em;
+	padding: 5px;
+	background-color: rgba(0, 197, 59, 0.5);
+	border: none;
+	cursor: pointer;
+
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5px 0.7fr;
+
+	grid-template-areas:
+		". . ."
+		"HangtimeUp SetsUp BreakUp"
+		"Hangtime Sets Break"
+		"HangtimeDown SetsDown BreakDown"
+		". . ."
+		"TimerRow TimerRow TimerRow"
+		". . ."
+		"Audio Audio .";
+}
+
+.Audio {
+	grid-area: Audio;
+	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.TimerRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"Start TimerValue TimerText";
+	grid-area: TimerRow;
+	background-color: rgba(255, 255, 255, .50);
+}
+
+.HangtimeUp {
+	grid-area: HangtimeUp;
+}
+
+.HangtimeDown {
+	grid-area: HangtimeDown;
+}
+
+.Hangtime {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"HangtimeText HangtimeValue";
+	grid-area: Hangtime;
+	background-color: rgba(255, 255, 255, .50);
+}
+
+.HangtimeText {
+	grid-area: HangtimeText;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.HangtimeValue {
+	grid-area: HangtimeValue;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.SetsUp {
+	grid-area: SetsUp;
+}
+
+.Sets {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"SetsText SetsValue";
+	grid-area: Sets;
+	background-color: rgba(255, 255, 255, .50);
+}
+
+.SetsText {
+	grid-area: SetsText;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.SetsValue {
+	grid-area: SetsValue;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.SetsDown {
+	grid-area: SetsDown;
+}
+
+.BreakUp {
+	grid-area: BreakUp;
+}
+
+.Break {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"BreakText BreakValue";
+	grid-area: Break;
+	background-color: rgba(255, 255, 255, .50);
+}
+
+.BreakText {
+	grid-area: BreakText;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.BreakValue {
+	grid-area: BreakValue;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.BreakDown {
+	grid-area: BreakDown;
+}
+
+.Start {
+	grid-area: Start;
+}
+
+.TimerText {
+	grid-area: TimerText;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	/* width and color */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.TimerValue {
+	grid-area: TimerValue;
+	font-size: 2em;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	/* width and color */
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+	background-image: url("background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 844px 390px;
+	touch-action: manipulation;
+}
+
+#audioLabel {
+	font-size: 1.5em;
+	margin: auto;
+	font-weight: bold;
+	color: black;
+	-webkit-text-stroke: 0.5px white;
+	/* width and color */
+	font-family: Arial, Helvetica, sans-serif;
+}

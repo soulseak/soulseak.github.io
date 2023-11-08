@@ -1,0 +1,28 @@
+{
+    "name": "Hangtimer",
+    "short_name": "Hangtimer",
+    "icons": [
+        {
+            "src": "/iphone_hangtimer_icon_transparent.png",
+            "sizes": "120x120",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/iphone_hangtimer_icon.png",
+            "sizes": "120x120",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/startup.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
+    "orientation": "landscape",
+    "start_url": "/index.html"
+}
